@@ -2,10 +2,6 @@
 
 ### Keep score with the Cornhole Score Keeper!
 
-## Getting Started
-
-I would like to release the app on the Google Play app development area. In the meantime, please use the code to install on your device.
-
 ## Screenshots
 
 ![Screenshot](/app/screenshots/Screenshot_Main.png) ![Screenshot](/app/screenshots/Screenshot_Win.png) ![Screenshot](/app/screenshots/Screenshot_Land.png)
