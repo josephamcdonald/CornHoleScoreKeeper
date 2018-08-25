@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Grow with Google Android Basics Nanodegree
+     Project: 2
+     Version: 2.0
+     App Name: Cornhole Score!
+     Author: Joseph McDonald -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.cornholescorekeeper.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cornhole"
+        android:padding="@dimen/dp_standard">
+
+        <TextView
+            android:id="@+id/status_game"
+            style="@style/status_game"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/score_header_team_a"
+            style="@style/score_header"
+            android:text="@string/name_team_a"
+            app:layout_constraintBaseline_toBaselineOf="@+id/inning_header"
+            app:layout_constraintEnd_toStartOf="@+id/inning_header"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/inning_header"
+            style="@style/score_header"
+            android:text="@string/header_inning"
+            app:layout_constraintEnd_toStartOf="@+id/score_header_team_b"
+            app:layout_constraintStart_toEndOf="@+id/score_header_team_a"
+            app:layout_constraintTop_toBottomOf="@+id/status_game" />
+
+        <TextView
+            android:id="@+id/score_header_team_b"
+            style="@style/score_header"
+            android:text="@string/name_team_b"
+            app:layout_constraintBaseline_toBaselineOf="@+id/inning_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/inning_header" />
+
+        <TextView
+            android:id="@+id/score_team_a_total"
+            style="@style/score_digital"
+            app:layout_constraintEnd_toEndOf="@+id/score_header_team_a"
+            app:layout_constraintStart_toStartOf="@+id/score_header_team_a"
+            app:layout_constraintTop_toBottomOf="@+id/score_header_team_a" />
+
+        <TextView
+            android:id="@+id/inning_current"
+            style="@style/score_digital_small"
+            app:layout_constraintEnd_toEndOf="@+id/inning_header"
+            app:layout_constraintStart_toStartOf="@+id/inning_header"
+            app:layout_constraintTop_toBottomOf="@+id/inning_header" />
+
+        <TextView
+            android:id="@+id/score_team_b_total"
+            style="@style/score_digital"
+            app:layout_constraintEnd_toEndOf="@+id/score_header_team_b"
+            app:layout_constraintStart_toStartOf="@+id/score_header_team_b"
+            app:layout_constraintTop_toBottomOf="@+id/score_header_team_b" />
+
+        <TextView
+            android:id="@+id/bags_header_team_a"
+            style="@style/score_header"
+            android:text="@string/header_bags"
+            app:layout_constraintEnd_toStartOf="@+id/bags_header_team_b"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/score_team_a_total" />
+
+        <TextView
+            android:id="@+id/bags_header_team_b"
+            style="@style/score_header"
+            android:text="@string/header_bags"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bags_header_team_a"
+            app:layout_constraintTop_toBottomOf="@+id/score_team_b_total" />
+
+        <TextView
+            android:id="@+id/bags_team_a"
+            style="@style/score_digital_small"
+            app:layout_constraintEnd_toEndOf="@+id/bags_header_team_a"
+            app:layout_constraintStart_toStartOf="@+id/bags_header_team_a"
+            app:layout_constraintTop_toBottomOf="@+id/bags_header_team_a" />
+
+        <TextView
+            android:id="@+id/bags_team_b"
+            style="@style/score_digital_small"
+            app:layout_constraintEnd_toEndOf="@+id/bags_header_team_b"
+            app:layout_constraintStart_toStartOf="@+id/bags_header_team_b"
+            app:layout_constraintTop_toBottomOf="@+id/bags_header_team_b" />
+
+        <TextView
+            android:id="@+id/score_team_a_inning"
+            style="@style/score_digital"
+            android:layout_width="@dimen/dp_zero"
+            android:textSize="@dimen/sp_score_inning_bags"
+            app:layout_constraintBaseline_toBaselineOf="@+id/bags_team_a"
+            app:layout_constraintEnd_toStartOf="@+id/bags_team_a"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/score_team_b_inning"
+            style="@style/score_digital"
+            android:layout_width="@dimen/dp_zero"
+            android:textSize="@dimen/sp_score_inning_bags"
+            app:layout_constraintBaseline_toBaselineOf="@+id/bags_team_b"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bags_team_b" />
+
+        <LinearLayout
+            android:id="@+id/button_bag_linear"
+            style="@style/button_bag_linear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bags_team_a">
+
+            <Button
+                android:id="@+id/button_plus3_team_a"
+                style="@style/button_bag"
+                android:background="@drawable/bag_blue"
+                android:text="@string/button_plus_three" />
+
+            <Button
+                android:id="@+id/button_plus1_team_a"
+                style="@style/button_bag"
+                android:background="@drawable/bag_blue"
+                android:text="@string/button_plus_one" />
+
+            <Button
+                android:id="@+id/button_zero_team_a"
+                style="@style/button_bag"
+                android:background="@drawable/bag_blue"
+                android:text="@string/button_zero" />
+
+            <Button
+                android:id="@+id/button_minus1_team_a"
+                style="@style/button_bag"
+                android:background="@drawable/bag_blue"
+                android:text="@string/button_minus_one" />
+
+            <Button
+                android:id="@+id/button_plus3_team_b"
+                style="@style/button_bag"
+                android:background="@drawable/bag_red"
+                android:text="@string/button_plus_three" />
+
+            <Button
+                android:id="@+id/button_plus1_team_b"
+                style="@style/button_bag"
+                android:background="@drawable/bag_red"
+                android:text="@string/button_plus_one" />
+
+            <Button
+                android:id="@+id/button_zero_team_b"
+                style="@style/button_bag"
+                android:background="@drawable/bag_red"
+                android:text="@string/button_zero" />
+
+            <Button
+                android:id="@+id/button_minus1_team_b"
+                style="@style/button_bag"
+                android:background="@drawable/bag_red"
+                android:text="@string/button_minus_one" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_reset"
+            style="@style/button_functional"
+            android:background="@drawable/button_black"
+            android:text="@string/button_reset"
+            app:layout_constraintEnd_toStartOf="@+id/button_next_inning"
+            app:layout_constraintStart_toStartOf="@+id/button_bag_linear"
+            app:layout_constraintTop_toBottomOf="@+id/button_bag_linear" />
+
+        <Button
+            android:id="@+id/button_next_inning"
+            style="@style/button_functional"
+            android:background="@drawable/button_green"
+            android:text="@string/button_next_inning"
+            app:layout_constraintEnd_toEndOf="@+id/button_bag_linear"
+            app:layout_constraintStart_toEndOf="@+id/button_reset"
+            app:layout_constraintTop_toBottomOf="@+id/button_bag_linear" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

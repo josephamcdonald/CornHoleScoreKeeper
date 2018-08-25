@@ -1,0 +1,69 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="status_game">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/sp_status_game</item>
+    </style>
+
+    <style name="score_header">
+        <item name="android:layout_width">@dimen/dp_zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_standard</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/sp_header_team_inning_bags</item>
+    </style>
+
+    <style name="score_digital">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/digital_7_normal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_marginTop">@dimen/dp_standard</item>
+        <item name="android:textSize">@dimen/sp_score_team</item>
+    </style>
+
+    <style name="score_digital_small" parent="score_digital">
+        <item name="android:layout_marginTop">@dimen/dp_small</item>
+        <item name="android:textSize">@dimen/sp_score_inning_bags</item>
+    </style>
+
+    <style name="button_bag" parent="android:Widget.Button">
+        <item name="android:layout_width">@dimen/dp_button_bag</item>
+        <item name="android:layout_height">@dimen/dp_button_bag</item>
+        <item name="android:layout_marginLeft">@dimen/dp_small</item>
+        <item name="android:layout_marginRight">@dimen/dp_small</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/sp_button_bag</item>
+    </style>
+
+    <style name="button_functional">
+        <item name="android:layout_width">@dimen/dp_button_round_dia</item>
+        <item name="android:layout_height">@dimen/dp_button_round_dia</item>
+        <item name="android:layout_marginTop">@dimen/dp_standard</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/sp_button_round</item>
+    </style>
+
+    <style name="button_bag_linear">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_standard</item>
+    </style>
+
+</resources>

@@ -1,0 +1,82 @@
+<resources>
+    <!-- Application name. -->
+    <string name="app_name">Cornhole Score Keeper!</string>
+
+    <!-- Team A name. -->
+    <string name="name_team_a">Beer Bellies</string>
+
+    <!-- Team B name. -->
+    <string name="name_team_b">The Dad Bods</string>
+
+    <!-- Header for bags remaining to throw. -->
+    <string name="header_bags">bags</string>
+
+    <!-- Header for current inning. -->
+    <string name="header_inning">inning</string>
+
+    <!-- Three point bag scoring button. -->
+    <string name="button_plus_three">+3</string>
+
+    <!-- One point bag scoring button. -->
+    <string name="button_plus_one">+1</string>
+
+    <!-- Zero point bag scoring button. -->
+    <string name="button_zero">0</string>
+
+    <!-- Minus one point bag scoring button. -->
+    <string name="button_minus_one">-1</string>
+
+    <!-- Reset game button. -->
+    <string name="button_reset">reset game</string>
+
+    <!-- Next inning button. -->
+    <string name="button_next_inning">next inning</string>
+
+    <!-- Initialize game status marquee. -->
+    <string name="status_init">Let\'s Play!</string>
+
+    <!-- Start next inning game status. -->
+    <string name="status_start_inning">Start Inning\ </string>
+
+    <!-- Three points scored game status. -->
+    <string name="status_three_points">In-The-Hole! +3 pts</string>
+
+    <!-- One point scored game status. -->
+    <string name="status_one_point">In-The-Count. +1 pt</string>
+
+    <!-- Zero points scored game status. -->
+    <string name="status_zero_points">The Whiff! 0 pts</string>
+
+    <!-- Minus one point scored game status. -->
+    <string name="status_minus_point">That Hurts. -1 pt</string>
+
+    <!-- Prompt for next inning game status. -->
+    <string name="status_prompt_next_inning">\Next Inning?</string>
+
+    <!-- Bags remaining throw by either team game status. -->
+    <string name="status_bags_remain">Someone has bags, folks.</string>
+
+    <!-- Team already has zerp points game status. -->
+    <string name="status_zero_score">Absolute zero reached.</string>
+
+    <!-- The game has a winner game status. -->
+    <string name="status_winner">Winner!\ </string>
+
+    <!-- String constants for instance state save/restore. -->
+    <string name="scoreTeamA">scoreTeamA</string>
+    <string name="scoreTeamB">scoreTeamB</string>
+    <string name="bagsTeamA">bagsTeamA</string>
+    <string name="bagsTeamB">bagsTeamB</string>
+    <string name="scoreTeamAInning">scoreTeamAInning</string>
+    <string name="scoreTeamBInning">scoreTeamBInning</string>
+    <string name="inningCurrent">inningCurrent</string>
+    <string name="winner">winner</string>
+    <string name="viewScoreTeamA">viewScoreTeamA</string>
+    <string name="viewScoreTeamB">viewScoreTeamB</string>
+    <string name="viewBagsTeamA">viewBagsTeamA</string>
+    <string name="viewBagsTeamB">viewBagsTeamB</string>
+    <string name="viewScoreTeamAInning">viewScoreTeamAInning</string>
+    <string name="viewScoreTeamBInning">viewScoreTeamBInning</string>
+    <string name="viewInningCurrent">viewInningCurrent</string>
+    <string name="viewStatusGame">viewStatusGame</string>
+</resources>

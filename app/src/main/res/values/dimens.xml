@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text size dimensions in sp. -->
+    <dimen name="sp_status_game">32sp</dimen>
+    <dimen name="sp_header_team_inning_bags">24sp</dimen>
+    <dimen name="sp_score_team">120sp</dimen>
+    <dimen name="sp_score_inning_bags">48sp</dimen>
+    <dimen name="sp_button_bag">28sp</dimen>
+    <dimen name="sp_button_round">14sp</dimen>
+
+    <!-- Length and margin dimensions in dp. -->
+    <dimen name="dp_button_bag">72dp</dimen>
+    <dimen name="dp_button_round_dia">60dp</dimen>
+    <dimen name="dp_zero">0dp</dimen>
+    <dimen name="dp_small">8dp</dimen>
+    <dimen name="dp_standard">16dp</dimen>
+</resources>
