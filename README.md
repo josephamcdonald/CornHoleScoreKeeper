@@ -8,9 +8,9 @@
 
 ## Built With
 
-Android Studio 3.1.4
+Android Studio 3.3.1
 
-Gradle 4.4
+Gradle 4.10.1
 
 API Level: 16. Android 4.1 (JELLY BEAN)
 
