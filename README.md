@@ -1,4 +1,4 @@
-# CornholeScoreKeeper
+# Cornhole Score Keeper
 
 ### Keep score with the Cornhole Score Keeper!
 
